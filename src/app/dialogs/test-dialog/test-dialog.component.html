@@ -1,0 +1,10 @@
+<ion-content class="ion-padding">
+  <div class="modal-content">
+    <h1>QR Modal</h1>
+    <div class="qr-wrapper">
+      <img [src]="src" alt="qr image" (error)="handleError()" />
+    </div>
+
+    <ion-button (click)="close('cancel')">Cancel</ion-button>
+  </div>
+</ion-content>
