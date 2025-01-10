@@ -35,6 +35,8 @@ export class AppComponent {
     const modal = await this.modalController.create({
       component: TestDialogComponent,
       componentProps: { src: qrImages[type] },
+      breakpoints: [0, 0.5, 0.8],
+      initialBreakpoint: 0.5,
     });
 
     modal.present();
@@ -48,6 +50,8 @@ export class AppComponent {
     const modal = await this.modalController.create({
       component: StatusDialogComponent,
       componentProps: { message: messages[type] },
+      breakpoints: [0, 0.5, 0.8],
+      initialBreakpoint: 0.5,
     });
 
     modal.present();
